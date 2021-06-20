@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/external/doctest/doctest   -pthread -lpthread -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/rectangle.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/rectangle.cpp",
+  "file": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/rectangle.cpp"
+},
+{
+  "directory": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/external/doctest/doctest   -pthread -lpthread -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/cuboid.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/cuboid.cpp",
+  "file": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/cuboid.cpp"
+},
+{
+  "directory": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/external/doctest/doctest   -pthread -lpthread -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/prism.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/prism.cpp",
+  "file": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/prism.cpp"
+},
+{
+  "directory": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/external/doctest/doctest   -pthread -lpthread -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/drone.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/drone.cpp",
+  "file": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/drone.cpp"
+},
+{
+  "directory": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/external/doctest/doctest   -pthread -lpthread -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/handling.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/handling.cpp",
+  "file": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/handling.cpp"
+},
+{
+  "directory": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/external/doctest/doctest   -pthread -lpthread -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/lacze_do_gnuplota.cpp",
+  "file": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/lacze_do_gnuplota.cpp"
+},
+{
+  "directory": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/external/doctest/doctest   -pthread -lpthread -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/main.dir/app/main.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/app/main.cpp",
+  "file": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/app/main.cpp"
+},
+{
+  "directory": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/unit_tests.dir/testrunner.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/tests/testrunner.cpp",
+  "file": "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/tests/testrunner.cpp"
+}
+]
