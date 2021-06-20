@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/tests/testrunner.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests/CMakeFiles/unit_tests.dir/testrunner.cpp.o"
+  "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/tests/testrunner.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests/CMakeFiles/unit_tests.dir/testrunner.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/tests
+# Install script for directory: /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

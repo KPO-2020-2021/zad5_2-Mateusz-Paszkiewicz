@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz
-BuildDirectory: /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build
+SourceDirectory: /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz
+BuildDirectory: /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz"
+ConfigureCommand: "/usr/bin/cmake" "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

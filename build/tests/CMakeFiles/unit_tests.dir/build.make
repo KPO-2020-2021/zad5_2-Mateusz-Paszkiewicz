@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz
+CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build
+CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/unit_tests.dir/depend.make
@@ -59,16 +59,16 @@ include tests/CMakeFiles/unit_tests.dir/flags.make
 
 tests/CMakeFiles/unit_tests.dir/testrunner.cpp.o: tests/CMakeFiles/unit_tests.dir/flags.make
 tests/CMakeFiles/unit_tests.dir/testrunner.cpp.o: ../tests/testrunner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/unit_tests.dir/testrunner.cpp.o"
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/unit_tests.dir/testrunner.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/tests/testrunner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/unit_tests.dir/testrunner.cpp.o"
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/unit_tests.dir/testrunner.cpp.o -c /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/tests/testrunner.cpp
 
 tests/CMakeFiles/unit_tests.dir/testrunner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unit_tests.dir/testrunner.cpp.i"
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/tests/testrunner.cpp > CMakeFiles/unit_tests.dir/testrunner.cpp.i
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/tests/testrunner.cpp > CMakeFiles/unit_tests.dir/testrunner.cpp.i
 
 tests/CMakeFiles/unit_tests.dir/testrunner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unit_tests.dir/testrunner.cpp.s"
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/tests/testrunner.cpp -o CMakeFiles/unit_tests.dir/testrunner.cpp.s
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/tests/testrunner.cpp -o CMakeFiles/unit_tests.dir/testrunner.cpp.s
 
 # Object files for target unit_tests
 unit_tests_OBJECTS = \
@@ -76,12 +76,13 @@ unit_tests_OBJECTS = \
 
 # External object files for target unit_tests
 unit_tests_EXTERNAL_OBJECTS = \
-"/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/rectangle.cpp.o" \
-"/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/cuboid.cpp.o" \
-"/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/prism.cpp.o" \
-"/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/drone.cpp.o" \
-"/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/handling.cpp.o" \
-"/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o"
+"/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/rectangle.cpp.o" \
+"/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/cuboid.cpp.o" \
+"/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/prism.cpp.o" \
+"/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/drone.cpp.o" \
+"/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/handling.cpp.o" \
+"/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o" \
+"/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/environment.cpp.o"
 
 unit_tests: tests/CMakeFiles/unit_tests.dir/testrunner.cpp.o
 unit_tests: CMakeFiles/engine.dir/src/rectangle.cpp.o
@@ -90,10 +91,11 @@ unit_tests: CMakeFiles/engine.dir/src/prism.cpp.o
 unit_tests: CMakeFiles/engine.dir/src/drone.cpp.o
 unit_tests: CMakeFiles/engine.dir/src/handling.cpp.o
 unit_tests: CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o
+unit_tests: CMakeFiles/engine.dir/src/environment.cpp.o
 unit_tests: tests/CMakeFiles/unit_tests.dir/build.make
 unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../unit_tests"
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../unit_tests"
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unit_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/unit_tests.dir/build: unit_tests
@@ -101,10 +103,10 @@ tests/CMakeFiles/unit_tests.dir/build: unit_tests
 .PHONY : tests/CMakeFiles/unit_tests.dir/build
 
 tests/CMakeFiles/unit_tests.dir/clean:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/unit_tests.dir/cmake_clean.cmake
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/unit_tests.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/unit_tests.dir/clean
 
 tests/CMakeFiles/unit_tests.dir/depend:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/tests /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests/CMakeFiles/unit_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/tests /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests/CMakeFiles/unit_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/unit_tests.dir/depend
 

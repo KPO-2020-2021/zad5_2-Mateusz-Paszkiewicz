@@ -6,5 +6,5 @@ CXX_FLAGS =  -pthread -lpthread -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -
 
 CXX_DEFINES = -DENABLE_DOCTEST_IN_LIBRARY
 
-CXX_INCLUDES = -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/external/doctest/doctest 
+CXX_INCLUDES = -I/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build -I/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/include -I/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/external/doctest/doctest 
 

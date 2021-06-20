@@ -25,9 +25,12 @@
 #include "cuboid.hh"
 #include "prism.hh"
 #include "drone.hh"
+#include "environment.hh"
+#include "scene.hh"
 
 
 #define CUBOID_MODEL_FILE      "../datasets/bryly_wzorcowe/szescian.dat"
+#define SPIKY_HILL             "../datasets/bryly_wzorcowe/szescian.dat"
 #define PRISM6_MODEL_FILE      "../datasets/bryly_wzorcowe/graniastoslup6.dat"
 #define DRONE_BODY_FILE        "../datasets/dat/korpus_drana1.dat"
 
@@ -42,6 +45,11 @@
 #define ACTUAL_FILE__DRONE1_ROTOR2  "../datasets/dat/PlikWlasciwy_Dron1_Rotor2.dat"
 #define ACTUAL_FILE__DRONE1_ROTOR3  "../datasets/dat/PlikWlasciwy_Dron1_Rotor3.dat"
 #define ACTUAL_FILE__DRONE1_ROTOR4  "../datasets/dat/PlikWlasciwy_Dron1_Rotor4.dat"
+
+#define ACTUAL_FILE__MOUNTIAN1 "../dat/gora1.dat"
+#define ACTUAL_FILE__MOUNTIAN2  "../dat/gora2.dat"
+#define ACTUAL_FILE__MOUNTIAN3  "../dat/gora3.dat"
+#define ACTUAL_FILE__PLATEAU  "../dat/plaskowyz1.dat"
 
 #define ROUTE_FILE "../datasets/dat/trasa_przelotu.dat"
 #define PLAIN_FILE "../datasets/bryly_wzorcowe/plaszczyzna.dat"
@@ -78,6 +86,11 @@ int main() {
   Lacze.DodajNazwePliku(WORK_FILE__DRONE1_ROTOR2);
   Lacze.DodajNazwePliku(WORK_FILE__DRONE1_ROTOR3);
   Lacze.DodajNazwePliku(WORK_FILE__DRONE1_ROTOR4);
+  Lacze.DodajNazwePliku(SPIKY_HILL);
+  Lacze.DodajNazwePliku(ACTUAL_FILE__MOUNTIAN1);
+  Lacze.DodajNazwePliku(ACTUAL_FILE__MOUNTIAN2);
+  Lacze.DodajNazwePliku(ACTUAL_FILE__MOUNTIAN3);
+  Lacze.DodajNazwePliku(ACTUAL_FILE__PLATEAU);
   Lacze.DodajNazwePliku(ROUTE_FILE);
   Lacze.DodajNazwePliku(PLAIN_FILE);
 

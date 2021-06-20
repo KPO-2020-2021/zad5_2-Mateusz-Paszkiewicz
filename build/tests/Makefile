@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz
+CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build
+CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests/CMakeFiles/progress.marks
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles 0
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests/CMakeFiles/progress.marks
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/coverage.dir/rule:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/coverage.dir/rule
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/coverage.dir/rule
 .PHONY : tests/CMakeFiles/coverage.dir/rule
 
 # Convenience name for target.
@@ -133,12 +133,12 @@ coverage: tests/CMakeFiles/coverage.dir/rule
 
 # fast build rule for target.
 coverage/fast:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/coverage.dir/build.make tests/CMakeFiles/coverage.dir/build
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/coverage.dir/build.make tests/CMakeFiles/coverage.dir/build
 .PHONY : coverage/fast
 
 # Convenience name for target.
 tests/CMakeFiles/unit_tests.dir/rule:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_tests.dir/rule
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/unit_tests.dir/rule
 .PHONY : tests/CMakeFiles/unit_tests.dir/rule
 
 # Convenience name for target.
@@ -148,7 +148,7 @@ unit_tests: tests/CMakeFiles/unit_tests.dir/rule
 
 # fast build rule for target.
 unit_tests/fast:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/build
 .PHONY : unit_tests/fast
 
 testrunner.o: testrunner.cpp.o
@@ -157,7 +157,7 @@ testrunner.o: testrunner.cpp.o
 
 # target to build an object file
 testrunner.cpp.o:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/testrunner.cpp.o
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/testrunner.cpp.o
 .PHONY : testrunner.cpp.o
 
 testrunner.i: testrunner.cpp.i
@@ -166,7 +166,7 @@ testrunner.i: testrunner.cpp.i
 
 # target to preprocess a source file
 testrunner.cpp.i:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/testrunner.cpp.i
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/testrunner.cpp.i
 .PHONY : testrunner.cpp.i
 
 testrunner.s: testrunner.cpp.s
@@ -175,7 +175,7 @@ testrunner.s: testrunner.cpp.s
 
 # target to generate assembly for a file
 testrunner.cpp.s:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/testrunner.cpp.s
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(MAKE) -f tests/CMakeFiles/unit_tests.dir/build.make tests/CMakeFiles/unit_tests.dir/testrunner.cpp.s
 .PHONY : testrunner.cpp.s
 
 # Help Target
@@ -203,6 +203,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

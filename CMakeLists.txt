@@ -44,6 +44,7 @@ set(SOURCES          # All .cpp files in src/
     src/drone
     src/handling
     src/lacze_do_gnuplota
+    src/environment
 )
 set(TESTFILES        # All .cpp files in tests/
     tests/testrunner.cpp

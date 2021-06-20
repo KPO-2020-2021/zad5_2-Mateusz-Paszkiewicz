@@ -9,14 +9,21 @@ CMakeFiles/engine.dir/src/cuboid.cpp.o: ../src/cuboid.cpp
 
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/cuboid.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/drone.hh
+CMakeFiles/engine.dir/src/drone.cpp.o: ../include/environment.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/handling.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/lacze_do_gnuplota.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/matrix.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/prism.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/rectangle.hh
+CMakeFiles/engine.dir/src/drone.cpp.o: ../include/scene.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/size.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/vector.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../src/drone.cpp
+
+CMakeFiles/engine.dir/src/environment.cpp.o: ../include/environment.hh
+CMakeFiles/engine.dir/src/environment.cpp.o: ../include/size.hh
+CMakeFiles/engine.dir/src/environment.cpp.o: ../include/vector.hh
+CMakeFiles/engine.dir/src/environment.cpp.o: ../src/environment.cpp
 
 CMakeFiles/engine.dir/src/handling.cpp.o: ../include/cuboid.hh
 CMakeFiles/engine.dir/src/handling.cpp.o: ../include/handling.hh

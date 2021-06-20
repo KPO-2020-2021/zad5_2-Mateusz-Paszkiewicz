@@ -6,6 +6,8 @@
 #include <tgmath.h>
 #include <unistd.h>
 
+#include "scene.hh"
+#include "scene.hh"
 #include "lacze_do_gnuplota.hh"
 #include "handling.hh"
 #include "matrix.hh"
@@ -45,7 +47,7 @@
 */
 
 
-class Drone : public Cuboid, public Prism{
+class Drone : public ObjectScene, public Cuboid, public Prism{
 private:
   Cuboid Body;
   Prism Rotor[4];
@@ -79,5 +81,6 @@ public:
 
   bool DrawHorizontalFlight(Vector3, PzG::LaczeDoGNUPlota);
 
+  bool IsLandingPossible( const Scene &) const;
 
 };

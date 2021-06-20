@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz
+CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build
+CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build
 
 # Utility rule file for coverage.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkie
 include tests/CMakeFiles/coverage.dir/progress.make
 
 tests/CMakeFiles/coverage:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests && echo [31mCode\ coverage\ only\ available\ in\ coverage\ builds.
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests && echo [32mMake\ a\ new\ build\ directory\ and\ rerun\ cmake\ with\ -DCMAKE_BUILD_TYPE=Coverage\ to\ enable\ this\ target.[m
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests && echo [31mCode\ coverage\ only\ available\ in\ coverage\ builds.
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests && echo [32mMake\ a\ new\ build\ directory\ and\ rerun\ cmake\ with\ -DCMAKE_BUILD_TYPE=Coverage\ to\ enable\ this\ target.[m
 
 coverage: tests/CMakeFiles/coverage
 coverage: tests/CMakeFiles/coverage.dir/build.make
@@ -68,10 +68,10 @@ tests/CMakeFiles/coverage.dir/build: coverage
 .PHONY : tests/CMakeFiles/coverage.dir/build
 
 tests/CMakeFiles/coverage.dir/clean:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/coverage.dir/cmake_clean.cmake
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/coverage.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/coverage.dir/clean
 
 tests/CMakeFiles/coverage.dir/depend:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/tests /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/tests/CMakeFiles/coverage.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/tests /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/tests/CMakeFiles/coverage.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/coverage.dir/depend
 

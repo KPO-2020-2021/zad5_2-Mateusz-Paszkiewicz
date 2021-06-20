@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/cuboid.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/cuboid.cpp.o"
-  "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/drone.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/drone.cpp.o"
-  "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/handling.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/handling.cpp.o"
-  "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/lacze_do_gnuplota.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o"
-  "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/prism.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/prism.cpp.o"
-  "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/src/rectangle.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/rectangle.cpp.o"
+  "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/src/cuboid.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/cuboid.cpp.o"
+  "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/src/drone.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/drone.cpp.o"
+  "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/src/environment.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/environment.cpp.o"
+  "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/src/handling.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/handling.cpp.o"
+  "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/src/lacze_do_gnuplota.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o"
+  "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/src/prism.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/prism.cpp.o"
+  "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/src/rectangle.cpp" "/home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/engine.dir/src/rectangle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

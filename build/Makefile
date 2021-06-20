@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz
+CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build
+CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -631,6 +631,33 @@ src/drone.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/drone.cpp.s
 .PHONY : src/drone.cpp.s
 
+src/environment.o: src/environment.cpp.o
+
+.PHONY : src/environment.o
+
+# target to build an object file
+src/environment.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/environment.cpp.o
+.PHONY : src/environment.cpp.o
+
+src/environment.i: src/environment.cpp.i
+
+.PHONY : src/environment.i
+
+# target to preprocess a source file
+src/environment.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/environment.cpp.i
+.PHONY : src/environment.cpp.i
+
+src/environment.s: src/environment.cpp.s
+
+.PHONY : src/environment.s
+
+# target to generate assembly for a file
+src/environment.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/environment.cpp.s
+.PHONY : src/environment.cpp.s
+
 src/handling.o: src/handling.cpp.o
 
 .PHONY : src/handling.o
@@ -790,6 +817,9 @@ help:
 	@echo "... src/drone.o"
 	@echo "... src/drone.i"
 	@echo "... src/drone.s"
+	@echo "... src/environment.o"
+	@echo "... src/environment.i"
+	@echo "... src/environment.s"
 	@echo "... src/handling.o"
 	@echo "... src/handling.i"
 	@echo "... src/handling.s"

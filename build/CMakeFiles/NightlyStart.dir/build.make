@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz
+CMAKE_SOURCE_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build
+CMAKE_BINARY_DIR = /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build
 
 # Utility rule file for NightlyStart.
 
@@ -71,6 +71,6 @@ CMakeFiles/NightlyStart.dir/clean:
 .PHONY : CMakeFiles/NightlyStart.dir/clean
 
 CMakeFiles/NightlyStart.dir/depend:
-	cd /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build /home/kalafiorek/Programowanie_obj2021/zad5_1-Mateusz-Paszkiewicz/build/CMakeFiles/NightlyStart.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build /home/kalafiorek/Programowanie_obj2021/zad5_2-Mateusz-Paszkiewicz/build/CMakeFiles/NightlyStart.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NightlyStart.dir/depend
 
