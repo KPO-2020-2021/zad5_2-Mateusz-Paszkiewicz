@@ -46,10 +46,10 @@
 #define ACTUAL_FILE__DRONE1_ROTOR3  "../datasets/dat/PlikWlasciwy_Dron1_Rotor3.dat"
 #define ACTUAL_FILE__DRONE1_ROTOR4  "../datasets/dat/PlikWlasciwy_Dron1_Rotor4.dat"
 
-#define ACTUAL_FILE__MOUNTIAN1 "../dat/gora1.dat"
-#define ACTUAL_FILE__MOUNTIAN2  "../dat/gora2.dat"
-#define ACTUAL_FILE__MOUNTIAN3  "../dat/gora3.dat"
-#define ACTUAL_FILE__PLATEAU  "../dat/plaskowyz1.dat"
+#define ACTUAL_FILE__MOUNTIAN1 "../datasets/dat/gora1.dat"
+#define ACTUAL_FILE__MOUNTIAN2  "../datasets/dat/gora2.dat"
+#define ACTUAL_FILE__MOUNTIAN3  "../datasets/dat/gora3.dat"
+#define ACTUAL_FILE__PLATEAU  "../datasets/dat/plaskowyz1.dat"
 
 #define ROUTE_FILE "../datasets/dat/trasa_przelotu.dat"
 #define PLAIN_FILE "../datasets/bryly_wzorcowe/plaszczyzna.dat"
@@ -74,6 +74,7 @@ const char *ActualFileNames[7] = {  ACTUAL_FILE__DRONE1_BODY,
 int main() {
 
   PzG::LaczeDoGNUPlota  Lacze;
+  Scene Main_Scene=Scene();
 
   Lacze.ZmienTrybRys(PzG::TR_3D);
   Lacze.Inicjalizuj();  // Tutaj startuje gnuplot.
@@ -105,6 +106,8 @@ int main() {
   Drone Drone1=Drone();
   Drone1.Create(ActualFileNames);
 
+  //Scene.AddDrone();
+
   Drone1.ChangeFiles(WorkFileNames);
 
   double ascension[3]={0,0,80};
@@ -114,8 +117,7 @@ int main() {
 
   Vector3 PathVec=Drone1.PlanPath();
 
-  Drone1.DrawDroneRotation(-90, Lacze);
-  //Drone1.AdjustOrientation(Lacze);
+  Drone1.AdjustOrientation(Lacze);
   getchar();
   Drone1.Idle(15, Lacze);
   Drone1.DrawVerticalFlight(AscensionVector, Lacze);

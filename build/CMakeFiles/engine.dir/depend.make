@@ -15,7 +15,6 @@ CMakeFiles/engine.dir/src/drone.cpp.o: ../include/lacze_do_gnuplota.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/matrix.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/prism.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/rectangle.hh
-CMakeFiles/engine.dir/src/drone.cpp.o: ../include/scene.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/size.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../include/vector.hh
 CMakeFiles/engine.dir/src/drone.cpp.o: ../src/drone.cpp
