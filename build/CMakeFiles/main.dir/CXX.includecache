@@ -35,8 +35,18 @@ environment.hh
 ../include/environment.hh
 
 ../include/environment.hh
+string
+-
+charconv
+-
 vector.hh
 ../include/vector.hh
+cuboid.hh
+../include/cuboid.hh
+handling.hh
+../include/handling.hh
+lacze_do_gnuplota.hh
+../include/lacze_do_gnuplota.hh
 
 ../include/handling.hh
 iostream

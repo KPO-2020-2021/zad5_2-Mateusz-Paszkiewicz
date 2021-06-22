@@ -46,9 +46,9 @@
 #define ACTUAL_FILE__DRONE1_ROTOR3  "../datasets/dat/PlikWlasciwy_Dron1_Rotor3.dat"
 #define ACTUAL_FILE__DRONE1_ROTOR4  "../datasets/dat/PlikWlasciwy_Dron1_Rotor4.dat"
 
-#define ACTUAL_FILE__MOUNTIAN1 "../datasets/dat/gora1.dat"
-#define ACTUAL_FILE__MOUNTIAN2  "../datasets/dat/gora2.dat"
-#define ACTUAL_FILE__MOUNTIAN3  "../datasets/dat/gora3.dat"
+#define ACTUAL_FILE__MOUNTAIN1 "../datasets/dat/gora1.dat"
+#define ACTUAL_FILE__MOUNTAIN2  "../datasets/dat/gora2.dat"
+#define ACTUAL_FILE__MOUNTAIN3  "../datasets/dat/gora3.dat"
 #define ACTUAL_FILE__PLATEAU  "../datasets/dat/plaskowyz1.dat"
 
 #define ROUTE_FILE "../datasets/dat/trasa_przelotu.dat"
@@ -87,11 +87,6 @@ int main() {
   Lacze.DodajNazwePliku(WORK_FILE__DRONE1_ROTOR2);
   Lacze.DodajNazwePliku(WORK_FILE__DRONE1_ROTOR3);
   Lacze.DodajNazwePliku(WORK_FILE__DRONE1_ROTOR4);
-  Lacze.DodajNazwePliku(SPIKY_HILL);
-  Lacze.DodajNazwePliku(ACTUAL_FILE__MOUNTIAN1);
-  Lacze.DodajNazwePliku(ACTUAL_FILE__MOUNTIAN2);
-  Lacze.DodajNazwePliku(ACTUAL_FILE__MOUNTIAN3);
-  Lacze.DodajNazwePliku(ACTUAL_FILE__PLATEAU);
   Lacze.DodajNazwePliku(ROUTE_FILE);
   Lacze.DodajNazwePliku(PLAIN_FILE);
 
@@ -103,17 +98,91 @@ int main() {
   Lacze.Inicjalizuj();  // Tutaj startuje gnuplot.
 
 
+
+
   Drone Drone1=Drone();
   Drone1.Create(ActualFileNames);
-
-  //Scene.AddDrone();
-
   Drone1.ChangeFiles(WorkFileNames);
+
+  Main_Scene.AddDrone(Drone1);
 
   double ascension[3]={0,0,80};
   Vector3 AscensionVector=Vector3(ascension);
   double descent[3]={0,0,-80};
   Vector3 DescentVector=Vector3(descent);
+
+  char option;
+  std::string obsticle;
+
+  std::cout<<"h for help"<<std::endl;
+
+Menu:
+
+  std::cin>>option;
+
+  std::cin.clear();
+
+  switch (option) {
+    case 'a':
+    {
+      Vector3 Input=Vector3();
+      std::cout<<"please specify obsticle type and coordinates"<<std::endl;
+      std::cin>>obsticle;
+      std::cin.clear();
+      std::cin>>Input;
+      std::cin.clear();
+
+      if(obsticle=="spiky_hill")
+        {
+          SpikyHill Object=SpikyHill();
+          Object.CreateSpikyHill(ACTUAL_FILE__MOUNTAIN1, Input , Lacze);
+          Main_Scene.AddSpikyHill(Object);
+        }
+      else if(obsticle=="plateau")
+        {
+          Plateau Object=Plateau();
+          Object.CreatePlateau(ACTUAL_FILE__PLATEAU, Input , Lacze);
+          Main_Scene.AddPlateau(Object);
+        }
+      else if(obsticle=="ridge")
+        {
+          Ridge Object=Ridge();
+          Object.CreateRidge(ACTUAL_FILE__MOUNTAIN3, Input , Lacze);
+          Main_Scene.AddRidge(Object);
+        }
+      else
+      {
+        std::cout<<"Object not recognized!"<<std::endl;
+        goto Menu;
+      }
+
+      goto Menu;
+    }
+
+    case 'f':
+    {
+      std::cout<<"Flying the drone..."<<std::endl;
+      goto Flying;
+    }
+    case 'q':
+    {
+      exit(0);
+      goto Menu;
+    }
+
+    case 'h':
+    {
+      std::cout<<"v - "<<std::endl;
+      std::cout<<"a - Add obsticle to map"<<std::endl;
+      std::cout<<"d - "<<std::endl;
+      std::cout<<"f - Fly the drone"<<std::endl;
+      std::cout<<"q - exit "<<std::endl;
+
+      goto Menu;
+    }
+  }
+
+  Flying:
 
   Vector3 PathVec=Drone1.PlanPath();
 

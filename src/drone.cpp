@@ -191,7 +191,7 @@ bool Drone::AdjustOrientation(PzG::LaczeDoGNUPlota Lacze)
 
   std::cout<<Angle*180/M_PI;
 
-  this->DrawDroneRotation(Angle*180/M_PI, Lacze);
+  this->DrawDroneRotation(Angle*180/M_PI/2, Lacze);
 
   return 1;
 }
@@ -240,4 +240,9 @@ bool Drone::DrawHorizontalFlight(Vector3 PathVector, PzG::LaczeDoGNUPlota Lacze)
     return true;
   else
     return false;
+}
+
+double Drone::GetRadius()
+{
+  return (this->Rotor[0].GetPosition() - this->Body.GetPosition()).Length();
 }

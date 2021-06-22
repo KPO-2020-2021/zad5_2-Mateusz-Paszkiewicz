@@ -45,6 +45,7 @@
 ░░░░░░░░░░░░░└─┤░░░░░┌───────────┘░░░░░░░░░░░░░░░░░░░░░
 */
 
+class Scene;  //Declaration of Scene class so the compiler knows it's coming
 
 class Drone : public SceneObject, Cuboid, Prism{
 private:
@@ -56,7 +57,7 @@ private:
   char *File_Names[6];
 public:
 
-  Drone Create(const char*[7]);                           // body
+  Drone Create(const char*[7]);
 
   Drone ChangeFiles(const char**);
 
@@ -80,6 +81,8 @@ public:
 
   bool DrawHorizontalFlight(Vector3, PzG::LaczeDoGNUPlota);
 
-  //bool IsLandingPossible( const Scene & ) const;
+  double GetRadius();
+
+  bool IsLandingPossible( const Scene & ) const;
 
 };
