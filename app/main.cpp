@@ -98,6 +98,26 @@ int main() {
   Lacze.Inicjalizuj();  // Tutaj startuje gnuplot.
 
 
+  //------ Hardwired objects-----
+    double arr1[3]={100, 100, 0};
+    double arr2[3]={90, 50, 0};
+    double arr3[3]={30, 150, 0};
+    Vector3 HWired1=Vector3(arr1);
+    Vector3 HWired2=Vector3(arr2);
+    Vector3 HWired3=Vector3(arr3);
+
+    Plateau HWObj1=Plateau();
+    HWObj1.CreatePlateau(ACTUAL_FILE__PLATEAU, HWired1 , Lacze);
+    Main_Scene.AddPlateau(HWObj1);
+
+    SpikyHill HWObj2=SpikyHill();
+    HWObj2.CreateSpikyHill(ACTUAL_FILE__MOUNTAIN1, HWired2 , Lacze);
+    Main_Scene.AddSpikyHill(HWObj2);
+
+    Ridge HWObj3=Ridge();
+    HWObj3.CreateRidge(ACTUAL_FILE__MOUNTAIN3, HWired3 , Lacze);
+    Main_Scene.AddRidge(HWObj3);
+  //------End of Hardwired objects-----
 
 
   Drone Drone1=Drone();
@@ -172,9 +192,7 @@ Menu:
 
     case 'h':
     {
-      std::cout<<"v - "<<std::endl;
       std::cout<<"a - Add obsticle to map"<<std::endl;
-      std::cout<<"d - "<<std::endl;
       std::cout<<"f - Fly the drone"<<std::endl;
       std::cout<<"q - exit "<<std::endl;
 

@@ -7,6 +7,16 @@
 #define ROTATION_VELOCITY 25*M_PI/180
 
 
+/*!
+ * Funckja czytajaca z plikow dane dla drona
+*
+*\param[in] const char* File_Names[7] to tablica 7 const charow gdzie
+* - 1 nazwa pliku korpusu drona
+* - 4 nazwy plikow rotorow
+* - 1 nazwa trasy przelotu
+* - nullptr
+*\retval dron BEZ przydzielonych plikow, z danymi przydzielonymi do odpowiednich pol
+*/
 Drone Drone::Create(const char* File_Names[7])
 {
   CoordsReadFromFile(File_Names[0], this->Body);
@@ -18,6 +28,16 @@ Drone Drone::Create(const char* File_Names[7])
   return (*this);
 }
 
+/*!
+ * Funckja zmieniajaca aktualnie wpisane pliki dronow
+*
+*\param[in] const char* File_Names[7] to tablica 7 const charow gdzie
+* - 1 nazwa pliku korpusu drona
+* - 4 nazwy plikow rotorow
+* - 1 nazwa trasy przelotu
+* - nullptr
+*\retval dron z przydzielonymi plikami
+*/
 Drone Drone::ChangeFiles(const char* File_Names[7])
 {
   this->File_Names[0]=const_cast <char *>(File_Names[0]);
@@ -31,6 +51,11 @@ Drone Drone::ChangeFiles(const char* File_Names[7])
   return (*this);
 }
 
+
+/*!
+* Funckja zapisuje aktualnie znajdujace sie w klasie dron dane do plikow
+*
+*/
 void Drone::UpdateFiles()
 {
   SaveCoordsToFile(this->File_Names[0],     this->Body);
@@ -40,7 +65,12 @@ void Drone::UpdateFiles()
   SaveCoordsToFile(this->File_Names[4], this->Rotor[3]);
 }
 
-
+/*!
+ * Funkcja realizujaca lot drona po linii prostej o jakis wektor
+*
+*\param[in] Vector3 Trans - wektor o ktory przesuniety zostanie dron
+*\retval przesuniety dron o wektor Trans
+*/
 Drone Drone::Displacement(Vector3 Trans)
 {
   (*this).Body=(*this).Body+Trans;
@@ -52,6 +82,13 @@ Drone Drone::Displacement(Vector3 Trans)
   return (*this);
 }
 
+
+/*!
+ * Funckja planujaca trase drona czytajac z pliku o nazwie zapisanej w klasie
+* liczy wektor trasy
+*
+*\retval Wektor o ktory powinien sie poruszyc dron (calosciowo)
+*/
 Vector3 Drone::PlanPath()
 {
   Vector3 PathCoordsVecStart=Vector3();
@@ -82,7 +119,12 @@ Vector3 Drone::PlanPath()
  return PathCoordsVecFinish-PathCoordsVecStart;
 }
 
-
+/*!
+* Funkcja obracajaca rotorki o jakis zadany konkretny kat
+*
+*\param[in] Angle - kat do obrotu
+*\retval dron z obroconymi rotorami
+*/
 bool Drone::SpinRotors(double Angle)
 {
   Vector3 CurrentRotorPosition[4];
@@ -106,6 +148,13 @@ bool Drone::SpinRotors(double Angle)
       return 1;
 }
 
+
+/*!
+* Funkcja znajdujaca kat orientacji w przestrzeni
+*
+*
+*\retval wektor jednostokwy celujacy do przadu od srodka drona
+*/
 Vector3 Drone::FindOrientation()
 {
   double FrontPlateArr[3]={this->Body(0,0)-(this->Body(0,0)-this->Body(4,0))/2,
@@ -123,6 +172,13 @@ Vector3 Drone::FindOrientation()
   return OrientationUnitVector;
 }
 
+
+/*!
+* Dron stoi i w powietrzu obraca rotorami i nic nie robi przez time czasu
+*
+*\param[in] time - czas przez ktory dron bedzie stal
+*\retval czy operacja sie powiodla
+*/
 bool Drone::Idle(float time,PzG::LaczeDoGNUPlota Lacze)
 {
     for(int timer=0;timer<TIME_UNIT*10*time; timer+=TIME_UNIT)
@@ -139,6 +195,12 @@ bool Drone::Idle(float time,PzG::LaczeDoGNUPlota Lacze)
 }
 
 
+/*!
+* Funkcja drona o konkretny kat (calego drona) w obliczanym czasie
+*
+*\param[in] Angle - kat do obrotu
+*\retval dron i wszystkie jego elementy obrocone w czasie zaleznym od kata
+*/
 bool Drone::DrawDroneRotation(double TotalAngle,PzG::LaczeDoGNUPlota Lacze)
 {
     Vector3 BodyPosition=this->Body.GetPosition();
@@ -172,16 +234,19 @@ bool Drone::DrawDroneRotation(double TotalAngle,PzG::LaczeDoGNUPlota Lacze)
     return 1;
 }
 
+
+/*!
+* Funkcja wywolujaca obrot o odpowiedni kat (taki jaki trzeba )
+*
+*\param[in] Angle - kat do obrotu
+*\param[in] Lacze - do rysowania
+*\retval Czy operacja wykonana poprawnie
+*/
 bool Drone::AdjustOrientation(PzG::LaczeDoGNUPlota Lacze)
 {
   double Angle;
   double OrientationToPathScalar=this->FindOrientation()*this->PlanPath();
 
-  /*std::cout<<this->Orientation;
-
-  std::cout<<OrientationToPathScalar<<std::endl;
-  std::cout<<Orientation.Length()<<std::endl;
-  std::cout<<this->PlanPath().Length()<<std::endl;*/
 
   Angle=acos( OrientationToPathScalar/Orientation.Length()/this->PlanPath().Length()  );
   std::cout<<Angle*180/M_PI;
@@ -189,13 +254,18 @@ bool Drone::AdjustOrientation(PzG::LaczeDoGNUPlota Lacze)
   if(Angle*180/M_PI>180)
     Angle=Angle-2*M_PI;
 
-  std::cout<<Angle*180/M_PI;
-
   this->DrawDroneRotation(Angle*180/M_PI/2, Lacze);
 
   return 1;
 }
 
+/*!
+* Pionowe przesuniecie drona w czasie
+*
+*\param[in] PathVector - wektor o ktory przesunie sie dron pionowo
+*\param[in] Lacze - do rysowania
+*\retval Czy operacja wykonana poprawnie
+*/
 bool Drone::DrawVerticalFlight(Vector3 PathVector, PzG::LaczeDoGNUPlota Lacze)
 {
   Vector3 StartingCoords=this->Body.GetPosition();
@@ -219,7 +289,13 @@ bool Drone::DrawVerticalFlight(Vector3 PathVector, PzG::LaczeDoGNUPlota Lacze)
 }
 
 
-
+/*!
+* Poziome przesuniecie drona w czasie
+*
+*\param[in] PathVector - wektor o ktory przesunie sie dron poziomo
+*\param[in] Lacze - do rysowania
+*\retval Czy operacja wykonana poprawnie
+*/
 bool Drone::DrawHorizontalFlight(Vector3 PathVector, PzG::LaczeDoGNUPlota Lacze)
 {
   Vector3 StartingCoords=this->Body.GetPosition();
@@ -240,9 +316,4 @@ bool Drone::DrawHorizontalFlight(Vector3 PathVector, PzG::LaczeDoGNUPlota Lacze)
     return true;
   else
     return false;
-}
-
-double Drone::GetRadius()
-{
-  return (this->Rotor[0].GetPosition() - this->Body.GetPosition()).Length();
 }

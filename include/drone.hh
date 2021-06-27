@@ -47,6 +47,15 @@
 
 class Scene;  //Declaration of Scene class so the compiler knows it's coming
 
+/*!
+*\brief Klasa Dron Przedstawia zlozenie figur geometrycznych
+* przedstawiajacych drona
+*
+*
+* Klasa ta uzywa Cuboid jako korpus drona i 4xPrism jako
+* jego rotory
+*
+*/
 class Drone : public SceneObject, Cuboid, Prism{
 private:
   Cuboid Body;
@@ -80,8 +89,6 @@ public:
   bool DrawVerticalFlight(Vector3, PzG::LaczeDoGNUPlota);
 
   bool DrawHorizontalFlight(Vector3, PzG::LaczeDoGNUPlota);
-
-  double GetRadius();
 
   bool IsLandingPossible( const Scene & ) const;
 
